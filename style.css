@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #4f1816;
+    background-color: #3c1213;
     color: #fff;
     padding: 16px 32px;
     position: sticky;
@@ -70,7 +70,7 @@ nav a:hover, nav a.active {
 
 .pagetop-btn {
     background-color: #CCAA66;
-    color: #4f1816;
+    color: #3c1213;
     padding: 12px 24px;
     font-weight: 700;
     border-radius: 25px;
@@ -104,7 +104,7 @@ nav a:hover, nav a.active {
     padding: 24px;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0 0, 0, 0.05);
-    border-top: 4px solid #4f1816;
+    border-top: 4px solid #3c1213;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     flex: 280px;
     max-width: 375px;
@@ -116,12 +116,12 @@ nav a:hover, nav a.active {
 }
 
 .card h3 {
-    color: #4f1816;
+    color: #3c1213;
     margin-bottom: 8px;
 }
 
 .card a {
-    color: #4f1816;
+    color: #3c1213;
     font-weight: 600;
     text-decoration: none;
     display: inline-block;
@@ -132,37 +132,50 @@ nav a:hover, nav a.active {
     text-decoration: underline;
 }
 
-.news-section {
+.info-section {
     background: white;
     padding: 32px;
     border-radius: 12px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-.news-section h2 {
-    color: #4f1816;
+.info-section h2 {
+    color: #3c1213;
     margin-bottom: 24px;
     border-bottom: 2px solid #CCAA66;
     padding-bottom: 8px;
     display: inline-block;
 }
 
-.news-item {
+.info-section-no-underline {
+    background: white;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.info-section-no-underline h2 {
+    color: #3c1213;
+    display: inline-block;
+}
+
+
+.item {
     padding: 1rem 0;
     border-bottom: 1px solid #eee;
 }
 
-.news-item:last-child {
+.item:last-child {
     border-bottom: none;
 }
 
-.news-date {
+.date {
     font-size: 13.6px;
     color: #888;
     font-weight: 600;
 }
 
-.news-title {
+.title {
     font-size: 17.6px;
     font-weight: 600;
     color: #222;
@@ -181,45 +194,93 @@ footer p {
     margin-bottom: 8px;
 }
 
-.dropper {
+.dropper-squished {
     max-width: 1200px;
     text-align: left;
-    margin: 25px auto;
 }
 
-.dropper details {
+.dropper-squished details {
     height: auto;
     padding: 18px;
     border-radius: 8px;
     background-color: #ffffff;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
     transition: background-color 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
-.dropper details[open] {
+.dropper-squished details[open] {
     background-color: #ffffff;
     padding: 18px 18px 0 18px;
+    
 }
 
-.dropper summary {
-    color: #4f1816;
+.dropper-squished summary {
+    color: #3c1213;
     font-size: 24px;
     font-weight: 700;
     cursor: pointer;
 }
 
-.dropper details[open] summary span {
+.dropper-squished details[open] summary span {
     border-bottom: 2px solid #CCAA66;
     padding-bottom: 10px;
 }
 
-.dropper p {
+.dropper-squished p {
     font-weight: 200;
     font-size: 16px;
     color: black;
     padding: 30px 50px 0px 50px;
 }
 
-.dropper details[open] ul {
+.dropper-squished details[open] ul {
     padding: 0 30px;
+}
+
+nav-alt a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease-in-out;
+}
+
+nav-alt a:hover, nav-alt a.active {
+    color: #CCAA66;
+}
+
+.faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 12px;
+    padding: 16px;
+}
+
+.staff-card {
+    background: #f9f9f9;
+    padding: 12px;
+    border-radius: 8px;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+.staff-card strong {
+    display: block;
+    color: #333;
+    font-size: 16px;
+}
+
+.staff-card small {
+    display: block;
+    color: #666;
+    margin-bottom: 6px;
+}
+
+.staff-card a {
+    color: #3c1213;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.staff-card a:hover {
+    color: #CCAA66;
 }
